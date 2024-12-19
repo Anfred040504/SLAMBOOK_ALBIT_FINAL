@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <!-- Favorites Section -->
+    <LinearLayout
+        android:id="@+id/FavoritesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Header with Text and Back Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <!-- Back Button aligned to the left -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Button"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Text centered at the top -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Icon Information"
+            android:textSize="20sp"
+            android:textColor="@color/text_primary"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- First Item (Delete Icon and Text) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete"
+            android:contentDescription="Delete Icon"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/Movies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="This icon use to clear your fav list"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/secondaryTextColor"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <!-- Second Item (Eye Icon and Text) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/eye_icon1"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_view"
+            android:contentDescription="Eye Icon"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/Songs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="This icon use to view your fav list"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/secondaryTextColor"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <!-- Third Item (Plus Icon and Text) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/plus_icon2"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_add"
+            android:contentDescription="Plus Icon"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/Hobbies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="This icon use to add item to your fav list"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/secondaryTextColor"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <!-- Fourth Item (Delete Icon and Text) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_background"
+        android:padding="5dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/delete3"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logout"
+            android:contentDescription="Delete Icon"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/Skills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="This icon is to logout"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/secondaryTextColor"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

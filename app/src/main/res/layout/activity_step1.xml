@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header with Text and Back Button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <!-- Back Button aligned to the left -->
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back Button"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Text centered at the top -->
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Information"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="5dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Full Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondaryTextColor"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="5dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/nickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Nickname"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondaryTextColor"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="3dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Male Option -->
+                <RadioButton
+                    android:id="@+id/gender_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp" />
+
+                <!-- Female Option -->
+                <RadioButton
+                    android:id="@+id/gender_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp" />
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="12dp">
+
+            <Spinner
+                android:id="@+id/birthday_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/months"
+                 />
+
+            <Spinner
+                android:id="@+id/birthday_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/days"
+                />
+
+            <Spinner
+                android:id="@+id/birthday_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/years"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/status"
+            android:layout_marginTop="2dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email - ex: slambook@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondaryTextColor"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="5dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Contact Number - ex: 09750647852"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondaryTextColor"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="5dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Address - ex: Tagum City"
+                android:textColor="@color/black"
+                android:textColorHint="@color/secondaryTextColor"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:fontFamily="sans-serif"
+                android:inputType="textEmailAddress"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_button_background"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

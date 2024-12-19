@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundColor">#BCCCDC</color>
+    <color name="inactivePaginationDotColor">#C4C4C4</color>
+
+    <color name="text_primary">#000000</color>
+    <color name="primaryColor">#FF0000</color>
+
+    <color name="primaryTextColor">#333333</color>
+    <color name="secondaryTextColor">#666666</color>
+
+    <color name="dividerColor">#D6D6D6</color>
+
+    <color name="rowBackgroundColor">#D3F1DF</color>
+
+    <color name="light_background">#F9F9F9</color>
+    <color name="button_color">#6200EE</color>
+    <color name="text_secondary">#757575</color>
+    <color name="border_color">#D1D1D1</color>
+    <color name="list_divider">#E0E0E0</color>
+
+
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <style name="SpinnerWhiteText" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:popupBackground">#000000</item> <!-- Optional: for dropdown background color -->
+    </style>
+</resources>
